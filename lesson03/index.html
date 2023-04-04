@@ -12,10 +12,9 @@
       }
       body {
         margin: 0 auto;
-        padding: 0 1em;
+        padding: 0 1.2em;
         width: 600px;
-        background-color: #eaeaea; /* bgc#90c7e3 */
-        color: #555; /* c#fff */
+        background-image: linear-gradient(180deg, rgb(218, 255, 132), white);
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* ffa */
       }
       footer {
@@ -24,11 +23,20 @@
         font-style: italic; /* fsi */
         padding: 1em;
         text-align: center; /* txa */
+        color:rgb(0, 36, 5);
+      }
+
+      h1, h2 {
+        color: rgb(0, 36, 5);
+      }
+
+      p {
+        color: rgb(0, 5, 46);
       }
 
       /* Add your CSS styles here */
-
-      .flow {
+      @media (min-width: 600px) {
+        .flow {
         display: flex;
         flex-direction: row;
       }
@@ -37,6 +45,8 @@
         flex: 1;
         margin-right: 1em;
       }
+      }
+      
     </style>
   </head>
 
