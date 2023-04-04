@@ -9,6 +9,7 @@
 * {
 	margin: 0;
 	padding: 0;
+    box-sizing: border-box;
 }
 body {  
     background-color: #ccc;
@@ -36,9 +37,28 @@ div {
 	margin-bottom:16px;
 	background-color:hsla(200,100%,30%,.5); 
 }
+
 /* Box Model Styles Go Here */
+div:nth-of-type(1) {
+    width: 100%;
+}
 
+div:nth-of-type(2) {
+    width: 460px;
+}
 
+div:nth-of-type(3) {
+    width: 460px;
+    padding: 20px;
+}
+
+/* This rule is for floated elements */
+.floatedElements div {
+    float: left;
+    width: 140px;
+    padding: 20px;
+    margin-right: 10px;
+}
 
 article:after {
     visibility: hidden;
@@ -83,9 +103,16 @@ and height + padding + border = actual visible/rendered height of box</p>
     <div>Box 3: Width = 460px + padding of 40px + 4px border (actual width is 504px)</div>
 </article>
 
+<article class="floatedElements">
+    <p>Let's look at floated elements</p>
+    <div>Floated Box 1</div>
+    <div>Floated Box 2</div>
+    <div>Floated Box 3</div>
+</article>
+
 <!-- Update the footer content with the correct year and your name -->
     <footer>
-      <p>Copyright 2022, Add Your Name Here</p>
+      <p>Copyright 2023, Avery Ramirez</p>
     </footer>
 
 </body>
