@@ -14,6 +14,7 @@ body {
   word-spacing: 0.16em;
   line-height: 1.25;
   font-family: Verdana, Geneva, sans-serif;
+  /* background: url(../images/mts1.png) center bottom repeat-x; */
   background: url(../images/cloudMain.png) center top no-repeat,
     url(../images/cloudScatter.png) 25% 50px repeat-x,
     url(../images/hills.png) center bottom repeat-x,
