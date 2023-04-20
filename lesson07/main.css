@@ -113,3 +113,17 @@ nav {
 .card-content {
   padding: 1.4em;
 }
+
+/* On screens 900px or larger, put all cards in a single row */
+@media screen and (min-width: 900px) {
+  .card {
+    width: 16%;
+  }
+}
+
+/* On screens 600px wide or less, make the cards two in each row */
+@media (max-width: 600px) {
+  .card {
+    width: calc(50% - 1em);
+  }
+}
