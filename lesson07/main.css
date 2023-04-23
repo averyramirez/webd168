@@ -114,16 +114,28 @@ nav {
   padding: 1.4em;
 }
 
-/* On screens 900px or larger, put all cards in a single row */
-@media screen and (min-width: 900px) {
-  .card {
-    width: 16%;
+@media (max-width: 700px) {
+  .navbar,
+  .navbar ul {
+    background: transparent;
   }
-}
-
-/* On screens 600px wide or less, make the cards two in each row */
-@media (max-width: 600px) {
+  .navbar li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    text-align: center;
+  }
+  .navbar li a {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0.5rem 0;
+  }
+  .masthead {
+    margin: 15px 5% 0 15px;
+    line-height: 1.4rem;
+  }
   .card {
-    width: calc(50% - 1em);
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
   }
 }
