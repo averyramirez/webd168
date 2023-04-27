@@ -10,7 +10,14 @@ $font-main: "Montserrat", "sans-serif";
 $padding: 15px;
 $borders: 15px;
 
+$mobile: 576px;
 $tablet: 800px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media (min-width: #{$tablet}) {
@@ -44,6 +51,11 @@ body {
 
     @include tablet {
       clip-path: polygon(0 0, 82% 0, 50% 100%, 0% 100%);
+    }
+
+    @include mobile {
+      clip-path: none;
+      background-color: color(primary);
     }
   }
 
