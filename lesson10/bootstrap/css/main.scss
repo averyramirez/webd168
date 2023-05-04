@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+$colors: (
+  primary: rgb(31, 31, 31),
+  text: #fff,
+);
+
+$font-main: "Heebo", sans-serif;
+$background-image: url("https://images.unsplash.com/photo-1488330890490-c291ecf62571?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+body {
+  background-image: $background-image;
+  font-family: $font-main;
+}
+
+.bioText {
+  font-family: $font-main;
+}
+
+header {
+  align-items: center;
+  background-color: color(primary);
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.headerTagline {
+  align-items: center;
+  color: color(text);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: color(primary);
+  color: color(text);
+  margin-left: 10%;
+  width: 80%;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.col-lg {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bioPhoto {
+  height: 300px;
+  width: 300px;
+}
+
+.bioText {
+  line-height: 25px;
+}
+
+ul {
+  line-height: 25px;
+}
+
+footer {
+  align-items: center;
+  background-color: color(primary);
+  color: color(text);
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  width: 80%;
+}
